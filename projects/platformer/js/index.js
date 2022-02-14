@@ -39,6 +39,7 @@ $(document).ready(function () {
         game.physics.arcade.overlap(asset, game.projectile, onProjectileOverlap, null, this);
         
         playerManager.update();
+        win();
     }
 
     function onProjectileOverlap() {
@@ -60,7 +61,13 @@ $(document).ready(function () {
 
     function collectDb(player, collectable) {
         game.score.text = 'Score: ' + (parseInt(/\s+(\S*)$/.exec(game.score.text)[1], 10) + collectable.type.points);
-        collectable.kill();
+        collectable.kill();        
+    }
+
+    function win(){
+        if (game.score.text === 'Score: 140'){
+            alert("You won!");
+        }
     }
 
 });

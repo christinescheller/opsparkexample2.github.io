@@ -9,7 +9,9 @@
         max: {assetKey: 'max', points: 20},
         steve: {assetKey: 'steve', points: 30},
         grace: {assetKey: 'grace', points: 40},
-        kennedi: {assetKey: 'kennedi', points: 50}
+        kennedi: {assetKey: 'kennedi', points: 50},
+        pizza: {assetKey: 'pizza', points: 150},
+        puppy: {assetKey: 'puppy', points: 250}
     };
     
     /**
@@ -37,9 +39,9 @@
         // ALL YOUR CODE GOES BELOW HERE ///////////////////////////////////////
         
         // example: 
-        createCollectable(type.steve, 200, 170, 6, 0.7);
-        createCollectable(type.db, 200, 170, 6, 0.7);
-        
+        createCollectable(type.steve, 200, 500, 6, 0.7);
+        createCollectable(type.db, 500, 500, 6, 0.7);
+        createCollectable(type.pizza, 500, 500, 6, 0.7);
         
         
         // ALL YOUR CODE GOES ABOVE HERE ///////////////////////////////////////
