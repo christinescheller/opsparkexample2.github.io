@@ -39,8 +39,7 @@ function applyFilter(){
       var rgbNumbers = rgbStringToArray(rgbString);
       rgbNumbers[RED] = 255;
       rgbString = rgbArrayToString(rgbNumbers);
-      image[c][r] = rgbString;
-      console.log(image[c][r] )
+      image[r][c] = rgbString;
     }
   }
 }
