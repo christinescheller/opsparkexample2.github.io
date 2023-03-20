@@ -23,10 +23,11 @@ var init = function (window) {
 
 
         // TODO 2 : Create a function that draws a circle 
-        
+
+            /*
 
         // TODO 3 / 7 : Call the drawCircle() function 
-
+   
 
         ////////////////////////////////////////////////////////////
         ///////////////// PROGRAM LOGIC ////////////////////////////

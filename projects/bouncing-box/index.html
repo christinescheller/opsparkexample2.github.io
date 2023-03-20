@@ -5,6 +5,15 @@
 	<title>Bouncing Box</title>
 	<script src="jquery.min.js"></script>
 	<style>
+		body {
+			background-image: url("images/changeOfSpeed.png");
+			background-color: #cccccc;
+			-webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+		}
+
 		.box {
 			width: 70px;
 			height: 70px;
@@ -31,16 +40,7 @@
 	<script>
 		(function(){
 			'use strict'
-			/* global jQuery */
-
-			//////////////////////////////////////////////////////////////////
-			/////////////////// SETUP DO NOT DELETE //////////////////////////
-			//////////////////////////////////////////////////////////////////
-			
-			var box = jQuery('.box');	// reference to the HTML .box element
-			var board = jQuery('.board');	// reference to the HTML .board element
-			var boardWidth = board.width();	// the maximum X-Coordinate of the screen
-
+			c
 			// Every 50 milliseconds, call the update Function (see below)
 			setInterval(update, 50);
 			
@@ -62,6 +62,7 @@
 			//////////////////////////////////////////////////////////////////
 			
 			// TODO 2 - Variable declarations 
+			var positionX = 0;
 			
 
 			
@@ -71,8 +72,9 @@
 			turn it around! 
 			*/
 			function update() {
-				
-
+				// Increase positionX by 10 pixels
+				positionX = positionX + 10;
+				moveBoxTo(positionX);	
 			};
 
 			/* 
@@ -81,7 +83,9 @@
 			the left side of the screen.
 			*/
 			function handleBoxClick() {
-				
+			 // points go up by 1
+			 // the box gets faster
+			 // changes position
 
 
 			};
